@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AllCourse from './components/AllCourse';
+// eslint-disable-next-line no-unused-vars
+import Course from './components/Course';
+import Home from './components/Home';
+import AddCourse from './components/AddCourse';
+import Navbar from './components/Navbar';
+import {
+  BrowserRouter as Router,Route
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <>
+    <Router>
+
+    <Navbar />
+    <div className='container'>
+      <Route path='/'component={Home} exact />
+      <Route path='/add-course'component={AddCourse} exact />
+      
+      
+
+     
+    {/* <AllCourse />
+    <AddCourse /> */}
+
+    </div> 
+    </Router>
+    </>
+    );
 }
 
 export default App;
