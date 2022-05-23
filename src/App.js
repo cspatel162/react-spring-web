@@ -7,27 +7,25 @@ import Home from './components/Home';
 import AddCourse from './components/AddCourse';
 import Navbar from './components/Navbar';
 import {
-  BrowserRouter as Router,Route
+  BrowserRouter,
+  Routes,
+  Route,
 } from "react-router-dom";
+import { useState } from 'react';
 
 function App() {
+  useState()
   return (
   <>
-    <Router>
-
-    <Navbar />
-    <div className='container'>
-      <Route path='/'component={Home} exact />
-      <Route path='/add-course'component={AddCourse} exact />
-      
-      
-
+<BrowserRouter>
+<Navbar />
+    <Routes>
      
-    {/* <AllCourse />
-    <AddCourse /> */}
-
-    </div> 
-    </Router>
+      <Route path="/" element={< Home/>} />
+      <Route path="/all-course" element={<AllCourse />} />
+      <Route path="add-course" element={<AddCourse />} />
+    </Routes>
+  </BrowserRouter>
     </>
     );
 }

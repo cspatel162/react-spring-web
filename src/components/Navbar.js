@@ -3,13 +3,13 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+    <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <a className="navbar-brand" href="#">
           Navbar
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -17,23 +17,28 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home <span class="sr-only"></span>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="/">
+                Home <span className="sr-only"></span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                about
+            <li className="nav-item">
+              <a className="nav-link" href="/add-course">
+                add-course
+              </a>
+            </li>
+            <li className="nav-item">
+            <a className="nav-link" href="/all-course">
+                All course
               </a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0"></form>
+          <form className="form-inline my-2 my-lg-0"></form>
         </div>
       </nav></div>
     </>
