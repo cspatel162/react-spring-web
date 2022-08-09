@@ -7,14 +7,7 @@ const AllCourse = () => {
     { title: "react", description: "this is react " },
     { title: "spring boot", description: "this is  spring boot" },
     { title: "react", description: "this is react " },
-    { title: "spring boot", description: "this is  spring boot" },
-    { title: "java", description: "this is java spring boot" },
-    { title: "java", description: "this is java spring boot" },
-    { title: "spring boot", description: "this is  spring boot" },
-    { title: "react", description: "this is react " },
-    { title: "spring boot", description: "this is  spring boot" },
-    { title: "java", description: "this is java spring boot" },
-    { title: "java", description: "this is java spring boot" },
+
   ]);
   return (
     <>
